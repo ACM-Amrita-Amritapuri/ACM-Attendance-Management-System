@@ -42,3 +42,8 @@ body{
     font-size: 15px;
     margin-left: 15px;
 }
+
+.dashboard .head h1{
+    font-size: 25px;
+    color: #fafafa;
+}

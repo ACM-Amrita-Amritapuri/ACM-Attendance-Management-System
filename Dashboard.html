@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-dark">
@@ -74,8 +75,58 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <div>
-            <canvas id="myChart"></canvas>
+          <div class="totalPresent">
+            <canvas width="400" height="150" id="totalPresentChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12 head mb-5">
+          <h1>Sigwise analytics</h1>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Web Dev</h5>
+              <canvas id="webtotalPresentChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Glich</h5>
+              <canvas id="glichtotalPresentChart"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AI</h5>
+              <canvas id="aitotalPresentChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 studentReport">
+        <div class="col-lg-12 head mb-5 d-flex justify-content-between">
+          <h1>Studentwise report</h1>
+          <form>
+            <div class="form-group d-flex">
+              <input
+                type="text"
+                class="form-control"
+                id="InputAmritaID"
+                placeholder="Amrita ID"
+              />
+              <button type="submit" class="btn btn-primary ms-3">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-10">
+          <div class="studentReport">
+            <canvas id="matrixChart">
           </div>
         </div>
       </div>
@@ -86,21 +137,81 @@
       crossorigin="anonymous"
     ></script>
     <script>
-        const ctx = document.getElementById("myChart");
-        const data = {
-            labels: ["A", "B", "C", "D", "E", "F", "G"],
-            datasets: [{
-            label: 'My First Dataset',
+      const ctx = document.getElementById("totalPresentChart");
+      const data = {
+        labels: ["A", "B", "C", "D", "E", "F", "G"],
+        datasets: [
+          {
+            label: "Members Present",
             data: [65, 59, 80, 81, 56, 55, 40],
             fill: false,
-            borderColor: 'rgb(75, 192, 192)',
-            tension: 0.1
-            }]
-        };
-        new Chart(ctx, {
-            type: "line",
-            data: data
-        })
+            borderColor: "rgb(75, 192, 192)",
+            tension: 0.1,
+          },
+        ],
+      };
+      new Chart(ctx, {
+        type: "line",
+        data: data,
+      });
     </script>
+    <script>
+      const web = document.getElementById("webtotalPresentChart");
+      const dataWeb = {
+        labels: ["A", "B", "C", "D", "E", "F", "G"],
+        datasets: [
+          {
+            label: "Members Present",
+            data: [10, 15, 5, 7, 20, 8, 3],
+            fill: false,
+            borderColor: "rgb(75, 192, 192)",
+            tension: 0.1,
+          },
+        ],
+      };
+      new Chart(web, {
+        type: "line",
+        data: dataWeb,
+      });
+    </script>
+    <script>
+      const glich = document.getElementById("glichtotalPresentChart");
+      const dataGlich = {
+        labels: ["A", "B", "C", "D", "E", "F", "G"],
+        datasets: [
+          {
+            label: "Members Present",
+            data: [8, 1, 2, 18, 9, 5, 4],
+            fill: false,
+            borderColor: "rgb(75, 192, 192)",
+            tension: 0.1,
+          },
+        ],
+      };
+      new Chart(glich, {
+        type: "line",
+        data: dataGlich,
+      });
+    </script>
+    <script>
+      const ai = document.getElementById("aitotalPresentChart");
+      const dataAi = {
+        labels: ["A", "B", "C", "D", "E", "F", "G"],
+        datasets: [
+          {
+            label: "Members Present",
+            data: [65, 59, 80, 81, 56, 55, 40],
+            fill: false,
+            borderColor: "rgb(75, 192, 192)",
+            tension: 0.1,
+          },
+        ],
+      };
+      new Chart(ai, {
+        type: "line",
+        data: dataAi,
+      });
+    </script>
+    
   </body>
 </html>

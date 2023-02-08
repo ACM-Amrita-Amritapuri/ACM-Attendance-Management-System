@@ -72,3 +72,24 @@ body{
 .dashboard .studentReport form input::placeholder{
     color: #fafafa;
 }
+
+#forms{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #fafafa;
+}
+
+.mb-4{
+    background: #fafafa;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    border-radius: 5px;
+}
+
+#inlineCheckbox1, #inlineCheckbox2{
+    border: 1.5px solid ;
+    border-radius: 10px;
+}

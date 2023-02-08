@@ -1,63 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Dashboard - ACM Attendance Management System</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  </head>
-  <body>
+</head>
+<body>
     <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/website_logo.webp" alt="Bootstrap" width="150px" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Add Members</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">All Members</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Attendance History</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            <button class="btn btn-success">Add Attendance</button>
-          </span>
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/website_logo.webp" alt="Bootstrap" width="150px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Add Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Attendance History</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <button class="btn btn-success">Add Attendance</button>
+                </span>
+            </div>
         </div>
-      </div>
     </nav>
     <div class="Dashboard" id="forms">
         <form>
             <div class="mb-3">
-              <label for="Inputname" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="Inputname">
+                <label for="Inputname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="Inputname">
             </div>
             <div class="mb-3">
-              <label for="Inputid" class="form-label">Roll Number</label>
-              <input type="text" class="form-control" id="Inputid">
+                <label for="Inputid" class="form-label">Roll Number</label>
+                <input type="text" class="form-control" id="Inputid">
             </div>
             <div class="mb-3">
                 <label for="InputSig" class="form-label">SIG</label>
@@ -68,33 +57,37 @@
                     <option value="3">CyberSec</option>
                     <option value="4">GLITCH</option>
                     <option value="5">Web Dev</option>
-                  </select>
+                </select>
             </div>
             <label for="InputGender" class="form-label">Gender</label><br>
             <div class="mb-4">
                 <div class="form-check form-check-inline" id="radio">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Male">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineCheckbox1"
+                        value="Male">
                     <label class="form-check-label" for="inlineCheckbox1">Male</label>
                 </div>
                 <div class="form-check form-check-inline" id="radio">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Female">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineCheckbox2"
+                        value="Female">
                     <label class="form-check-label" for="inlineCheckbox2">Female</label>
-                  </div>
-                  </div>
+                </div>
+            </div>
             <label for="InputResd" class="form-label">Residence</label><br>
             <div class="mb-4">
                 <div class="form-check form-check-inline" id="radio">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Hosteler">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox1"
+                        value="Hosteler">
                     <label class="form-check-label" for="inlineCheckbox1">Hosteler</label>
-                  </div>
-                  <div class="form-check form-check-inline" id="radio">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="DayScholar">
+                </div>
+                <div class="form-check form-check-inline" id="radio">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineCheckbox2"
+                        value="DayScholar">
                     <label class="form-check-label" for="inlineCheckbox2">Day Scholar</label>
-                  </div>
-                  </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary" style="margin-left: 20%";>Submit</button>
-          </form>
-        </div>
     </div>
-    </body>
+    <button type="submit" class="btn btn-primary" style="margin-left: 20%" ;>Submit</button>
+    </form>
+    </div>
+    </div>
+</body>

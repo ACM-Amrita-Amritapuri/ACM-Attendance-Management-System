@@ -73,23 +73,47 @@ body{
     color: #fafafa;
 }
 
-#forms{
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+.addMembers h1{
+    font-size: 25px;
     color: #fafafa;
 }
 
-.mb-4{
-    background: #fafafa;
-    padding-left: 9px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: black;
-    border-radius: 5px;
+.addMembers form{
+    margin-top: 20px;
+    color: #fafafa;
 }
 
-#inlineCheckbox1, #inlineCheckbox2{
-    border: 1.5px solid ;
-    border-radius: 10px;
+.addMembers form label span{
+    margin-right: 8px;
+}
+
+.addMembers form input, .addMembers form select{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border:  1px solid #fafafa;
+    height: 50px;
+    color: #fafafa;
+}
+
+.addMembers form input:focus, .addMembers form select:focus{
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #00A5E6;
+    color: #fafafa;
+}
+
+.addMembers form input::placeholder{
+    color: #fafafa;
+}
+
+.addMembers form select option{
+    background-color: #1E293B;
+}
+
+.addMembers form button{
+    margin-top: 10px
 }

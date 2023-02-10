@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./Dashboard.html">
           <img src="images/website_logo.webp" alt="Bootstrap" width="150px" />
         </a>
         <button
@@ -38,7 +38,9 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Add Members</a>
+              <a class="nav-link" aria-current="page" href="./Add_members.html"
+                >Add Members</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">All Members</a>
@@ -47,8 +49,11 @@
               <a class="nav-link" href="#">Attendance History</a>
             </li>
           </ul>
-          <span class="navbar-text">
+          <span class="navbar-text d-flex">
             <button class="btn btn-success">Add Attendance</button>
+            <button class="btn btn-danger d-flex ms-3">
+              <span class="material-symbols-outlined"> logout </span>Logout
+            </button>
           </span>
         </div>
       </div>
@@ -59,7 +64,7 @@
           <h1>Your success starts here!</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-lg-12">
           <form class="row">
             <div class="col-6">
@@ -78,8 +83,7 @@
             </div>
             <div class="col-6">
               <label class="form-label d-flex"
-                ><span class="material-symbols-outlined"> call </span> Amrita
-                ID</label
+                ><span class="material-symbols-outlined"> call </span> Contact Number</label
               >
               <input type="text" class="form-control" id="Inputname" />
             </div>
@@ -138,11 +142,19 @@
                 <option value="2">Hostler</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary d-flex justify-content-center">
-              <span class="material-symbols-outlined me-2"> add_circle </span> Add
-              Member
+            <button
+              type="submit"
+              class="btn btn-primary d-flex justify-content-center"
+            >
+              <span class="material-symbols-outlined me-2"> add_circle </span>
+              Add Member
             </button>
           </form>
+        </div>
+      </div>
+      <div class="row text-center text-white">
+        <div class="col-lg-12">
+          <p>© 2023 ACM Amritapuri All Rights Reserved.</p>
         </div>
       </div>
     </div>

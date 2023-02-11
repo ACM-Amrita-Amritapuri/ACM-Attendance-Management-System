@@ -1,119 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body{
-    background-color: #020B14 !important;
-    font-family: 'Poppins', sans-serif;
+body {
+  background-color: #020b14 !important;
+  font-family: "Poppins", sans-serif;
 }
 
-.login .card{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    background-color: #1E293B !important;
-    width: 40%;
+.login .card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: #1e293b !important;
+  width: 40%;
 }
-.login .card .card-body{
-    text-align: center;
-}
-
-.login .card .card-body h1{
-    margin-top: 20px;
-    color: #fafafa;
-} 
-
-.login .card .card-body form{
-    margin-top: 40px;
+.login .card .card-body {
+  text-align: center;
 }
 
-.login .card .card-body form input{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
+.login .card .card-body h1 {
+  margin-top: 20px;
+  color: #fafafa;
 }
 
-.navbar a img{
-    text-align: center;
+.login .card .card-body form {
+  margin-top: 40px;
 }
 
-.navbar .navbar-nav .nav-item a{
-    color: #fafafa;
-    font-size: 15px;
-    margin-left: 15px;
+.login .card .card-body form input {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 
-.dashboard .head h1{
-    font-size: 25px;
-    color: #fafafa;
+.navbar a img {
+  text-align: center;
 }
 
-.dashboard .totalPresent{
-    margin-top: 50px;
+.navbar .navbar-nav .nav-item a {
+  color: #fafafa;
+  font-size: 15px;
+  margin-left: 15px;
 }
 
-.dashboard .card{
-    background-color: #1E293B;
-    border-radius: 5px;
+.dashboard .head h1 {
+  font-size: 25px;
+  color: #fafafa;
 }
 
-.dashboard .card .card-body h5{
-    color: #fafafa;
+.dashboard .totalPresent {
+  margin-top: 50px;
 }
 
-.dashboard .studentReport form input{
-    background-color: transparent;
-    box-shadow: none;
-    outline: none;
-    border: 1px solid #fafafa;
-    color: #fafafa;
+.dashboard .card {
+  background-color: #1e293b;
+  border-radius: 5px;
 }
 
-.dashboard .studentReport form input::placeholder{
-    color: #fafafa;
+.dashboard .card .card-body h5 {
+  color: #fafafa;
 }
 
-.addMembers h1{
-    font-size: 25px;
-    color: #fafafa;
+.dashboard .studentReport form input {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #fafafa;
+  color: #fafafa;
 }
 
-.addMembers form{
-    margin-top: 20px;
-    color: #fafafa;
+.dashboard .studentReport form input::placeholder {
+  color: #fafafa;
 }
 
-.addMembers form label span{
-    margin-right: 8px;
+.addMembers h1 {
+  font-size: 25px;
+  color: #fafafa;
 }
 
-.addMembers form input, .addMembers form select{
-    margin-top: 10px;
-    margin-bottom: 30px;
-    background-color: transparent;
-    box-shadow: none;
-    outline: none;
-    border:  1px solid #fafafa;
-    height: 50px;
-    color: #fafafa;
+.addMembers form {
+  margin-top: 20px;
+  color: #fafafa;
 }
 
-.addMembers form input:focus, .addMembers form select:focus{
-    background-color: transparent;
-    box-shadow: none;
-    outline: none;
-    border: 1px solid #00A5E6;
-    color: #fafafa;
+.addMembers form label span {
+  margin-right: 8px;
 }
 
-.addMembers form input::placeholder{
-    color: #fafafa;
+.addMembers form input,
+.addMembers form select {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #fafafa;
+  height: 50px;
+  color: #fafafa;
 }
 
-.addMembers form select option{
-    background-color: #1E293B;
+.addMembers form input:focus,
+.addMembers form select:focus {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #00a5e6;
+  color: #fafafa;
 }
 
-.addMembers form button{
-    margin-top: 10px
+.addMembers form input::placeholder {
+  color: #fafafa;
+}
+
+.addMembers form select option {
+  background-color: #1e293b;
+}
+
+.addMembers form button {
+  margin-top: 10px;
+}
+
+.Members h1 {
+  font-size: 25px;
+  color: #fafafa;
+}
+
+.Members table {
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #1e293b;
+  color: #fafafa;
+}
+
+.Members table thead tr {
+  margin-top: 30px;
+}
+
+.Members table tbody tr:hover {
+  background-color: #4cc2c2;
+}
+
+.Members table tbody tr td,
+.Members table tbody tr:hover td {
+  color: #fafafa !important;
+}
+
+.Members table input {
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #192332;
+  border: none;
+  height: 30px;
+  color: #fafafa;
+  border-radius: 8px;
+}
+
+.Members table input:focus {
+  outline: none;
 }

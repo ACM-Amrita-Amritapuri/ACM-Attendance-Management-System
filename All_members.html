@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/filter.js"></script>
+    <title>All Members - ACM Attendance Management System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="./Dashboard.html">
+          <img src="images/website_logo.webp" alt="Bootstrap" width="150px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./Add_members.html"
+                >Add Members</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./All_members.html">All Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Attendance_history.html">Attendance History</a>
+            </li>
+          </ul>
+          <span class="navbar-text d-flex">
+            <button class="btn btn-success">Add Attendance</button>
+            <button class="btn btn-danger d-flex ms-3">
+              <span class="material-symbols-outlined"> logout </span>Logout
+            </button>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div class="container Members">
+      <div class="row mt-5 mb-3">
+        <div class="col-lg-12">
+          <h1>All Members</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-borderless table-hover">
+              <thead>
+                <tr>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Full Name"
+                    />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Amrita ID"
+                    />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Branch"
+                    />
+                  </th>
+                  <th>
+                    <input type="text" class="search-input" placeholder="SIG" />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Contact Number"
+                    />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Email ID"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Akhil S Kumar</td>
+                  <td>AM.EN.U4EAC20005</td>
+                  <td>EAC</td>
+                  <td>Web</td>
+                  <td>9400171674</td>
+                  <td>akhilskumar120@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Vani R</td>
+                  <td>AM.EN.U4CSE20274</td>
+                  <td>CSE</td>
+                  <td>CP</td>
+                  <td>9061359009</td>
+                  <td>vani@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Sudhin S</td>
+                  <td>AM.EN.U4AIE20168</td>
+                  <td>CSE-AI</td>
+                  <td>CP</td>
+                  <td>9961557857</td>
+                  <td>sudi05@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>R Neeraja Anand</td>
+                  <td>AM.EN.U4CSE20059</td>
+                  <td>CSE</td>
+                  <td>AI</td>
+                  <td>7907505328</td>
+                  <td>neeraja.anand.here@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center text-white bottom-0">
+        <div class="col-lg-12">
+          <p>© 2023 ACM Amritapuri All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

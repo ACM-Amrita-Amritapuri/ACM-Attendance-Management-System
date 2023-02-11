@@ -1,4 +1,4 @@
-![portfolio-website-cover](https://github.com/https://github.com/ACM-Amrita-Amritapuri/ACM-Attendance-Management-System/blob/main/Screenshots/Dashboard.jpg?raw=true)
+![website-screenshot](https://github.com/ACM-Amrita-Amritapuri/ACM-Attendance-Management-System/blob/main/screenshots/Dashboard.jpg?raw=true)
 
 # ACM Amritapuri Members & Attendance Management System
 

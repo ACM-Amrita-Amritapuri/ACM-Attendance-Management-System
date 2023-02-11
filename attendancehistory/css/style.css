@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+  background-color: #020B14 !important;
+  font-family: 'Poppins', sans-serif;
+}
+.table {
+    font-family: "Fira Sans", sans-serif;
+    border-collapse: collapse;
+    color: #ffffff;
+  }
+  
+  .table th {
+    text-align: left;
+    border-top: 1px solid #009578;
+    border-bottom: 1px solid #009578;
+  }
+  
+  .table td,
+  .search-input {
+    font-size: 1em;
+    padding: 0.1em 1em;
+    color: #ffffff;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    font-family: "Fira Sans", sans-serif;
+    background-color: #020B14;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  

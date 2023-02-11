@@ -159,3 +159,17 @@ body {
 .Members table input:focus {
   outline: none;
 }
+
+.Members .addAttendance input{
+  background-color: #192332;
+  border: none;
+  height: 50px;
+  color: #fafafa;
+  border-radius: 8px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.Members .addAttendance input:focus {
+  outline: none;
+}

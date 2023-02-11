@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/filter.js"></script>
     <title>Add Attendance - ACM Attendance Management System</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -46,7 +47,7 @@
               <a class="nav-link" href="./All_members.html">All Members</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Attendance History</a>
+              <a class="nav-link" href="./Attendance_history.html">Attendance History</a>
             </li>
           </ul>
           <span class="navbar-text d-flex">
@@ -58,13 +59,106 @@
         </div>
       </div>
     </nav>
-    <div class="container addMembers">
+    <div class="container Members">
       <div class="row mt-5">
         <div class="col-lg-12">
           <h1>Keep your learning streaks high!</h1>
         </div>
       </div>
-      
+      <div class="row addAttendance mt-4">
+        <div class="col-lg-12">
+          <form>
+            <div class="d-flex">
+              <input placeholder="Amrita ID">
+              <button class="btn btn-success">Mark Attendance</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-borderless table-hover">
+              <thead>
+                <tr>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Full Name"
+                    />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Amrita ID"
+                    />
+                  </th>
+                  <th>
+                    <input type="text" class="search-input" placeholder="SIG" />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Date"
+                    />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="In-time"
+                    />
+                  </th>
+                  <th>
+                    <input
+                      type="text"
+                      class="search-input"
+                      placeholder="Out-time"
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Akhil S Kumar</td>
+                  <td>AM.EN.U4EAC20005</td>
+                  <td>Web</td>
+                  <td>11/02/2023</td>
+                  <td>17.30</td>
+                  <td>20.45</td>
+                </tr>
+                <tr>
+                  <td>Vani R</td>
+                  <td>AM.EN.U4CSE20274</td>
+                  <td>CP</td>
+                  <td>11/02/2023</td>
+                  <td>17.15</td>
+                  <td>20.50</td>
+                </tr>
+                <tr>
+                  <td>Sudhin S</td>
+                  <td>AM.EN.U4AIE20168</td>
+                  <td>CP</td>
+                  <td>11/02/2023</td>
+                  <td>17.10</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>R Neeraja Anand</td>
+                  <td>AM.EN.U4CSE20059</td>
+                  <td>AI</td>
+                  <td>11/02/2023</td>
+                  <td>17.00</td>
+                  <td>20.50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
       <div class="row text-center text-white">
         <div class="col-lg-12">
           <p>© 2023 ACM Amritapuri All Rights Reserved.</p>
